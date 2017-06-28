@@ -48,7 +48,7 @@
 
   - name: Save private key
     copy: content="{{ ec2_key.key.private_key }}" dest="{{ keydest }}{{ keypair }}.pem" mode=0600
-    state: absent
+      state=absent
     when: ec2_key.changed
 
   - name: Create EC2 instance
