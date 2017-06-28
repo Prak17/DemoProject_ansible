@@ -27,12 +27,10 @@
           from_port: 22
           to_port: 22
           cidr_ip: 0.0.0.0/0
-
         - proto: tcp
           from_port: 80
           to_port: 80
           cidr_ip: 0.0.0.0/0
-
         - proto: tcp
           from_port: 8080
           to_port: 8080
@@ -40,12 +38,6 @@
       rules_egress:
         - proto: all
           cidr_ip: 0.0.0.0/0
-      dest=/ext/ansible/result/inventory
-
-  - name: create ec2 details file
-    template:
-      src=./templates/ec2.j2
-      dest=/ext/ansible/result/ec2
     register: Firewall
 
   - name: Create Key-Pair
