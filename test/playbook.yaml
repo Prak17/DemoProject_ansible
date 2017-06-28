@@ -3,7 +3,10 @@
 - hosts: TestServers
   sudo: yes
 
-  tasks:
+  tasks:  
+  
+  - name: resolving dependency for libfontconfig
+    apt: name=libfontconfig state=present
   
   - name: run test
     shell: mvn test
