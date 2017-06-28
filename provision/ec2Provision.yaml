@@ -15,7 +15,6 @@
     keydest: /ext/
 
   tasks:
-
   - name: Create security group
     local_action:
       module: ec2_group
