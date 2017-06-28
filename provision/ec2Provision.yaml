@@ -47,7 +47,7 @@
     template:
       src=./templates/ec2.j2
       dest=/ext/ansible/result/ec2
-register: Firewall
+    register: Firewall
 
   - name: Create Key-Pair
     ec2_key:
