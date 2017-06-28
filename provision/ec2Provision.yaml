@@ -77,8 +77,4 @@
       src=./templates/inventory.j2
       dest=/ext/inventory
 
-  - name: creating the Inventory
-    template:
-      src=./templates/inventory.j2
-      dest=/ext/inventory
 
