@@ -21,11 +21,3 @@
       src: /avivaTest/target/surefire-reports/testng-results.xml
       dest: /ext/jenkins_home/workspace/Test_Machine_Provisioning/
       flat: yes
-  
-  - action: ec2_facts
-  - name: terminate the instance
-    local_action:
-      module: ec2
-      state: 'absent'
-      region: '{{ region }}'
-      instance_ids: "{{ ansible_ec2_instance_id }}"
