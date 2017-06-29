@@ -76,7 +76,7 @@
 
   - name: Clone git test repository
     git:
-      repo='https://github.com/subagarw/avivaTest.git'
+      repo='https://github.com/subagarw/DemoProjectTest.git'
       dest=/avivaTest
       clone=yes
       update=yes
