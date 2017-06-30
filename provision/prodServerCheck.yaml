@@ -1,0 +1,12 @@
+---
+- hosts: local
+  sudo: yes
+  
+  tasks: 
+    - action: ec2_facts
+      filters:
+        instance-state-name: running
+        "tag:Name": Example
+    - name Conditionally provision a new instance. 
+        
+    
