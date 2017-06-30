@@ -3,10 +3,10 @@
   sudo: yes
   
   tasks: 
-    - action: ec2_facts
+    - action: ec2_remote_facts
       filters:
         instance-state-name: running
-        "tag:Name": Example
+        "tag:Name": ProdServer
     - name Conditionally provision a new instance. 
         
     
