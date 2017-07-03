@@ -12,7 +12,7 @@
     keypair: ansible_test
     region: ap-southeast-2
     count: 1
-    keydest: /ext/
+    keydest: /ext/test
 
   tasks:
   - name: Create security group
@@ -75,6 +75,6 @@
   - name: creating the Inventory
     template:
       src=./templates/inventory.j2
-      dest=/ext/inventory
+      dest=/ext/test/inventory
 
 
