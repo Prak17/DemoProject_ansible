@@ -6,13 +6,13 @@
 
   vars:
     instance_type: t2.micro
-    security_group: ansible_test
-    image: ami-807876e3
+    security_group: PocBam
+    image: ami-916f59f4
     user: ubuntu
-    keypair: ansible_test
+    keypair: PocBam
     region: ap-southeast-2
     count: 1
-    keydest: /ext/test/
+    keydest: /data/bamboo_poc/test/
 
   tasks:
   - name: Create security group
@@ -75,6 +75,6 @@
   - name: creating the Inventory
     template:
       src=./templates/inventory.j2
-      dest=/ext/test/inventory
+      dest=/data/bamboo_poc/test/inventory
 
 
