@@ -10,7 +10,7 @@
     image: ami-916f59f4
     user: ubuntu
     keypair: PocBam
-    region: ap-southeast-2
+    region: us-east-2
     count: 1
     keydest: /data/bamboo_poc/test/
 
