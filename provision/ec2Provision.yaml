@@ -9,7 +9,7 @@
     security_group: PocBam
     image: ami-916f59f4
     user: ubuntu
-    keypair: PocBam
+    keypair: Ec2_config
     region: us-east-2
     count: 1
     keydest: /data/bamboo_poc/test/
